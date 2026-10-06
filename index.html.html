@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero" aria-hidden="true">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+      <h1>Good to see you again.</h1>
+      <p>Log in and pick up where you stopped.</p>
+    </section>
+
+    <section class="panel">
+      <form id="loginForm" novalidate>
+        <h2>Log in</h2>
+
+        <div class="field">
+          <input type="email" id="email" placeholder=" " autocomplete="email" required>
+          <label for="email">Email</label>
+          <small class="error" id="emailError"></small>
+        </div>
+
+        <div class="field">
+          <input type="password" id="password" placeholder=" " autocomplete="current-password" required>
+          <label for="password">Password</label>
+          <button type="button" id="toggle" class="toggle">Show</button>
+          <small class="error" id="passError"></small>
+        </div>
+
+        <button type="submit" class="submit">Log in</button>
+        <p id="message" class="message" role="status"></p>
+      </form>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
