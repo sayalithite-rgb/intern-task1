@@ -89,3 +89,42 @@ h2 { font-size: 2rem; margin-bottom: 2rem; }
   .s2, .s3 { display: none; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .login-container {
+  background: #1e1e1e;
+  color: #ffffff;
+}
+
+body.dark-mode input {
+  background: #2a2a2a;
+  color: #ffffff;
+  border-color: #555;
+}
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+body.dark-mode .login-container {
+  background: #1e1e1e;
+  color: white;
+}
+
+body.dark-mode input {
+  background: #2a2a2a;
+  color: white;
+  border-color: #555;
+}
+
+#themeToggle {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
